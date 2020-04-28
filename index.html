@@ -20,7 +20,13 @@
 </head>
 <body>
 
+
+  <nav class="bg-dark" style="text-align: center !important;">
+    <span class="navbar-brand mb-0" style="color: aliceblue; text-align: center !important;">Participants are advised to install LTSpice and get accustomed to its environment</span>
+  </nav>
+
   <!--================ Header Menu Area start =================-->
+
   <header class="header_area">
     <div class="main_menu">
       <nav class="navbar navbar-expand-lg navbar-light">
@@ -50,6 +56,7 @@
       </nav>
     </div>
   </header>
+
   <!--================Header Menu Area =================-->
 
   
@@ -92,13 +99,13 @@
               <p class="h4 primary-text2 mb-3">Rules</p>
               <li>All the circuits should be designed using discrete components (like resistor/diode/capacitor/transistor/MOSFETs)
                 and Operational amplifiers only. <br> Use of ICs is prohibited unless stated otherwise.</li>
-              <li>The Participants are not allowed to use logic circuits (like Logic gates, Flip-Flops) directly, using ICs or otherwise. To use logic circuits, implement them using discrete components only.</li>
-              <li>The circuit has to be made in a circuit simulator software like LTSpice (recommended) and simulated in it to check the working of circuit. </li>
-              <li>The file along with a report (In PDF/Word format) explaining the working of circuit needs to be submitted.</li>
-              <li>Report should not exceed 500 words. Explaination should be as concise and clear as possible.  Support the report with simulation
+              <li>Use of behavioural digital components from LTSpice is not allowed, unless stated otherwise.</li>
+              <li>The circuit is to be made using LTSpice</li>
+              <li>The circuit file(.asc) along with a report (In PDF/Word format) explaining the working of circuit needs to be submitted.</li>
+              <li>Report should not exceed 500 words(It's a circuit designing event not a report writing competition). Explaination should be as concise and clear as possible.  Support the report with simulation
                 results of output ( and of other things if asked in question).</li>
-              <li>There will be optional part in each question. No points will be deducted if it is not done, but bonus points will be offered if done.
-                Optional part will be loosely framed so that individual participants can use their imagination and creativity to reach the desired
+              <li>There may be optional part in some questions. No points will be deducted if it is not done, but bonus points will be offered if done.
+                Optional part will be loosely framed so that individual participants can use their creativity to reach the desired
                 goal in whichever way they like to.</li>
               <li>The event will be held over 2 days. On the first day, first problem set will be released (which would contain 2-4 questions).
                 On second day, next problem set will be released (No of question will depend on the participation and performance on first day).</li>
@@ -165,10 +172,18 @@
           <div class="scheduleTab">
              
             <ul class="nav nav-tabs"> 
+
+              <!-- Sample -->
+               <li class="nav-item text-center">
+                <a class = "active" data-toggle="tab" href="#sample">
+                  <h4>Sample Problem</h4>
+                  <!-- <p>H Bridge</p> -->
+                </a>
+              </li> 
               
               <!-- Theme 1 -->
                <!-- <li class="nav-item text-center">
-                <a class = "active" data-toggle="tab" href="#Theme1">
+                <a data-toggle="tab" href="#Theme1">
                   <h4>Theme 1</h4>
                   <p>Op Apms</p>
                 </a>
@@ -185,11 +200,87 @@
             </ul>  -->
           
             <!-- Tab panes -->
-            <!-- <div class="tab-content"> -->
+            <div class="tab-content">
+
+
+              <!-- Sample Content -->
+                <div id="sample" class="tab-pane active">
+                <div class="schedule-card">
+                  <div class="row no-gutters">
+                    <div class="col-md-3">
+                      <a href="Problems/Sample.pdf" target="_blank">
+                      <div class="card-identity">
+                        <img src="img/hbridge.png" alt="">
+                        <h3>H Bridge</h3>
+                        <p></p>
+                      </div>
+                      </a>
+                    </div>
+                    <div class="col-md-9 align-self-center">
+                      <div class="schedule-content">
+                        <p class="schedule-date">100 pts</p>
+                        <a class="schedule-title" href="Problems/Sample.pdf" target="_blank">
+                          <h3>Sample Problem Statement</h3>
+                        </a>
+                        <p>A pulse transformer requires high current to drive because of low resistance of primary
+                          side. A high current switch is required to drive the current through the transformer. A
+                          H bridge circuit can be used here to drive the pulse transformer. A transistor/MOSFET
+                          works as a high current switch in this circuit. Design a H-Bridge circuit for the same.</p>
+                          <h4>Solution: <br></h4>
+                          <a href="https://drive.google.com/open?id=1AEfHzK6UCBUYDsnt4h6BMYv7ujNksvqb" target="_blank">Circuit File</a>
+                          <br>
+                          <a href="Problems/sample-sol.docx" target="_blank">Report</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- <div class="schedule-card">
+                  <div class="row no-gutters">
+                    <div class="col-md-3">
+                      <div class="card-identity">
+                        <img src="img/problem_pic/op-amp.png" alt="">
+                        <h3>Op Amp</h3>
+                        <p></p>
+                      </div>
+                    </div>
+                    <div class="col-md-9 align-self-center">
+                      <div class="schedule-content">
+                        <p class="schedule-date">5 pts</p>
+                        <a class="schedule-title" href="Problems/Problem1.pdf" target="_blank">
+                          <h3>Problem 2</h3>
+                        </a>
+                        <p>A multivibrator circuit is a circuit which switches it’s output between a ”HIGH” state and a ”LOW” state. How fast the state changes depends on the frequency of multivibrator </p>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+                <!-- <div class="schedule-card">
+                  <div class="row no-gutters">
+                    <div class="col-md-3">
+                      <div class="card-identity">
+                        <img src="img/problem_pic/op-amp.png" alt="">
+                        <h3>Op Amp</h3>
+                        <p></p>
+                      </div>
+                    </div>
+                    <div class="col-md-9 align-self-center">
+                      <div class="schedule-content">
+                        <p class="schedule-date">5 pts</p>
+                        <a class="schedule-title" href="Problems/Problem1.pdf" target="_blank">
+                          <h3>Problem 3</h3>
+                        </a>
+                        <p>A multivibrator circuit is a circuit which switches it’s output between a ”HIGH” state and a ”LOW” state. How fast the state changes depends on the frequency of multivibrator </p>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+              </div>  
+
           
 
               <!-- Theme 1 Content -->
-               <!-- <div id="Theme1" class="tab-pane active">
+                <!-- <div id="Theme1" class="tab-pane">
+                  
                 <div class="schedule-card">
                   <div class="row no-gutters">
                     <div class="col-md-3">
@@ -210,6 +301,7 @@
                     </div>
                   </div>
                 </div>
+
                 <div class="schedule-card">
                   <div class="row no-gutters">
                     <div class="col-md-3">
@@ -249,7 +341,7 @@
                       </div>
                     </div>
                   </div>
-                </div>
+                </div> 
               </div>  -->
 
               <!--  Theme 2 Content-->
@@ -319,7 +411,7 @@
 
 
              <!-- Coming Soon Temporay -->
-                <p class="h2 primary-text2 text-center">Coming Soon...</p>
+                <!-- <p class="h2 primary-text2 text-center">Coming Soon...</p> -->
               </div>
             </div>
           </div>
